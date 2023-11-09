@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>All Github Pages Links</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<style type="text/css">
+*+html {
+  margin:0px;
+  padding:0px;
+}
+	body{
+		font-family: 'Montserrat', sans-serif;
+		background: #5acee1;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		max-width: 100%;
+	}
+
+/* Base styles for the container */
+.clouds-container {
+	position: relative;
+	width: 100vw;
+	height: 200px;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	margin-top: -25px;
+	top: 0;
+	margin-left: -17vw;
+	overflow: visible;
+}
+
+/* Styling for individual clouds */
+.cloud {
+	position: absolute;
+	background: url('cloud.png') no-repeat;
+	width: 200px;
+	height: 100px;
+	opacity: 0.7;
+	animation: floatClouds 35s infinite linear;
+	z-index: 3;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* Keyframes for floating animation */
+@keyframes floatClouds {
+  0%   { transform: translateX(-200px); } /* Start off-screen */
+  100% { transform: translateX(100vw); }   /* Move across the container */
+}
+
+/* Additional clouds for variability */
+.cloud:nth-child(2) { top: 70px; left: 50px; animation-duration: 18s; }
+.cloud:nth-child(3) { top: 140px; left: 150px; animation-duration: 20s; }
+
+@keyframes clouds{
+	0% {transform: translate3d(0%, 25%, 0px); opacity: 0}
+	5%{opacity: 0.25}
+	10%{opacity: 0.5}
+	90%{opacity: 1}
+	100% {transform: translate3d(50vw, -10%, 0px); opacity: 0}
+}
+@keyframes clouds2{
+	0% {transform: translate3d(0%, 25%, 0px); opacity: 0}
+	5%{opacity: 0.25}
+	10%{opacity: 0.5}
+	90%{opacity: 1}
+	100% {transform: translate3d(50vw, -10%, 0px); opacity: 0}
+}
+.clouds-container img{
+	max-width: 200px;
+	margin-left: 15px;
+  margin-right: 15px
+}
+.cloud1{
+	animation: clouds 35s infinite linear;
+	margin-bottom: 90px;
+	z-index: 1;
+}
+.cloud2{
+	animation: clouds 55s infinite linear;
+	margin-bottom: 50px;
+	z-index: 2;
+}
+.cloud3{
+	animation: clouds 45s infinite linear;
+}
+.cloud4{
+	animation: clouds 40s infinite linear;
+	margin-bottom: 40px;
+}
+.cloud5{
+	animation: clouds 45s infinite linear;
+	margin-bottom: 90px;
+	max-width: 150px !important;
+}
+.cloud6{
+	animation: clouds 35s infinite linear;
+}
+.cloud7{
+	animation: clouds 25s infinite linear;
+}
+
+
+
+
+
+
+
+
+
+</style>
+
+
+<div class="clouds-container">
+	<img src="cloud1.png" class="cloud1" alt="cloud">
+	<img src="cloud6.png" class="cloud2" alt="cloud">
+	<img src="cloud3.png" class="cloud3" alt="cloud">
+	<img src="cloud4.png" class="cloud4" alt="cloud">
+	<img src="cloud5.png" class="cloud5" alt="cloud">
+	<img src="cloud6.png" class="cloud6" alt="cloud">
+	<img src="cloud7.png" class="cloud7" alt="cloud">
+</div>
+
+
+
+</body>
+</html>
